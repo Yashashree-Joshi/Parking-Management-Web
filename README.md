@@ -30,63 +30,63 @@ This project intentionally avoids backend frameworks and instead focuses on core
 
    -🚗 4-Wheelers
 
--Fixed number of slots for each type
+- Fixed number of slots for each type
 
--First-Fit slot allocation strategy
+- First-Fit slot allocation strategy
 
--Automatic slot reuse after vehicle exit
+- Automatic slot reuse after vehicle exit
 
--⏱ Time Tracking
+- ⏱ Time Tracking
 
   -Automatic entry time capture
 
-   -Automatic exit time capture
+  -Automatic exit time capture
 
   -Human-readable timestamps
 
--💰 Billing System
+- 💰 Billing System
 
-Minimum charge: 1 hour
+  -Minimum charge: 1 hour
 
-Partial hours are rounded up
+  -Partial hours are rounded up
 
-Rates:
+- Rates:
 
-2-Wheeler → ₹20/hour
+ -2-Wheeler → ₹20/hour
 
-4-Wheeler → ₹50/hour
+ -4-Wheeler → ₹50/hour
 
-🧾 Bill Generation
+- 🧾 Bill Generation
 
 Automatically generated at vehicle exit
 
-Displays:
+- Displays:
 
-Vehicle number
+  -Vehicle number
 
-Vehicle type
+  -Vehicle type
 
-Entry & exit time
+  -Entry & exit time
 
-Total duration
+ -Total duration
 
 Total amount
 
-🔍 Search Functionality
+- 🔍 Search Functionality
 
-Search vehicle by number
+  -Search vehicle by number
 
-Displays slot number and entry time
+  -Displays slot number and entry time
 
-Works across both parking sections
+   -Works across both parking sections
 
-💾 Data Persistence
+- 💾 Data Persistence
 
 Uses localStorage for live data storage
 
 Parking state is restored on page reload
 
-📂 File Handling (Web-Correct)
+- 📂 File Handling (Web-Correct)
 
 Export parking data to .txt file
 
