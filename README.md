@@ -2,6 +2,7 @@
 
 A modern, browser-based Parking Management System built using vanilla HTML, CSS, and JavaScript.
 This project is designed as an academic, viva-ready system that demonstrates clean business logic, time-based billing, proper data persistence, and web-appropriate file handling.
+
 ---
 ## 📌 Project Overview
 
@@ -9,19 +10,21 @@ The Smart Parking Management System simulates a real-world parking lot where an 
 The system automatically allocates slots, tracks entry/exit time, calculates parking charges, and generates bills — all through a clean dashboard interface.
 
 This project intentionally avoids backend frameworks and instead focuses on core web concepts, making it ideal for academic evaluation.
+
 ---
 ## ✨ Key Features
--🔐 Authentication
 
--Admin-only login
+- 🔐 Authentication
 
--Hardcoded credentials (academic use)
+- Admin-only login
 
--Session-style dashboard switching
+- Hardcoded credentials (academic use)
 
--🅿️ Parking Management
+- Session-style dashboard switching
 
--Separate parking areas for:
+- 🅿️ Parking Management
+
+- Separate parking areas for:
 
    -🏍️ 2-Wheelers
 
