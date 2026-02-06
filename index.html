@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Management System</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username" />
+            <input type="password" id="password" placeholder="Password" />
+            <button onclick="login()">Login</button>
+            <p id="loginMessage"></p>
+        </div>
+
+        <div id="menu" style="display: none;">
+            <h2>Parking Management System</h2>
+            <button onclick="showForm('insert')">Park Vehicle</button>
+            <button onclick="showForm('display')">Display Vehicles</button>
+            <button onclick="showForm('exit')">Exit Vehicle</button>
+            <button onclick="showForm('search')">Search Vehicle</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+        <!-- Insert/Park Vehicle Form -->
+        <div id="insertForm" style="display: none;">
+            <h3>Park Vehicle</h3>
+            <select id="vehicleType">
+                <option value="2W">2 Wheeler</option>
+                <option value="4W">4 Wheeler</option>
+            </select>
+            <input type="text" id="vehicleNumber" placeholder="Last 4 Digits of Vehicle" maxlength="4" />
+            <button onclick="parkVehicle()">Park Vehicle</button>
+        </div>
+
+        <!-- Display Vehicles -->
+        <div id="displayForm" style="display: none;">
+            <h3>Display Vehicles</h3>
+            <select id="displayType" onchange="updateDisplay()">
+                <option value="2W">2 Wheelers</option>
+                <option value="4W">4 Wheelers</option>
+            </select>
+            <div id="displayContainer"></div>
+        </div>
+
+        <!-- Exit Vehicle Form -->
+        <div id="exitForm" style="display: none;">
+            <h3>Exit Vehicle</h3>
+            <select id="exitType">
+                <option value="2W">2 Wheeler</option>
+                <option value="4W">4 Wheeler</option>
+            </select>
+            <input type="text" id="exitNumber" placeholder="Last 4 Digits of Vehicle" maxlength="4"/>
+            <button onclick="exitVehicle()">Exit Vehicle</button>
+        </div>
+
+        <!-- Search Vehicle Form -->
+        <div id="searchForm" style="display: none;">
+            <h3>Search Vehicle</h3>
+            <select id="searchType">
+                <option value="2W">2 Wheeler</option>
+                <option value="4W">4 Wheeler</option>
+            </select>
+            <input type="text" id="searchNumber" placeholder="Last 4 Digits of Vehicle" maxlength="4" />
+            <button onclick="searchVehicle()">Search Vehicle</button>
+            <p id="searchResult"></p>
+        </div>
+    </div>
+</body>
+</html>
