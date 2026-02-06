@@ -26,9 +26,9 @@ This project intentionally avoids backend frameworks and instead focuses on core
 
 - Separate parking areas for:
 
-   -🏍️ 2-Wheelers
+   - 🏍️ 2-Wheelers
 
-   -🚗 4-Wheelers
+   - 🚗 4-Wheelers
 
 - Fixed number of slots for each type
 
@@ -38,93 +38,80 @@ This project intentionally avoids backend frameworks and instead focuses on core
 
 - ⏱ Time Tracking
 
-  -Automatic entry time capture
+  - Automatic entry time capture
 
-  -Automatic exit time capture
+  - Automatic exit time capture
 
-  -Human-readable timestamps
+  - Human-readable timestamps
 
 - 💰 Billing System
 
-  -Minimum charge: 1 hour
+  - Minimum charge: 1 hour
 
-  -Partial hours are rounded up
+  - Partial hours are rounded up
 
 - Rates:
 
- -2-Wheeler → ₹20/hour
+  - 2-Wheeler → ₹20/hour
 
- -4-Wheeler → ₹50/hour
+  - 4-Wheeler → ₹50/hour
 
-- 🧾 Bill Generation
+  - 🧾 Bill Generation
 
 Automatically generated at vehicle exit
 
 - Displays:
 
-  -Vehicle number
+  - Vehicle number
 
-  -Vehicle type
+  - Vehicle type
 
-  -Entry & exit time
+  - Entry & exit time
 
- -Total duration
+  - Total duration
 
-Total amount
+  - Total amount
 
 - 🔍 Search Functionality
 
-  -Search vehicle by number
+  - Search vehicle by number
 
-  -Displays slot number and entry time
+  - Displays slot number and entry time
 
-   -Works across both parking sections
+   - Works across both parking sections
 
 - 💾 Data Persistence
 
-Uses localStorage for live data storage
+   - Uses localStorage for live data storage
 
-Parking state is restored on page reload
+   - Parking state is restored on page reload
 
 - 📂 File Handling (Web-Correct)
 
-Export parking data to .txt file
+   - Export parking data to .txt file
 
-Import parking data from .txt file
+   - Import parking data from .txt file
 
-Demonstrates file handling within browser security constraints
+   - Demonstrates file handling within browser security constraints
 
-🎨 User Interface Highlights
+- 🧠 Core Concepts Demonstrated
 
-Modern dashboard layout with sidebar navigation
+   - First-Fit allocation algorithm
 
-Visual parking slot grid:
+   - Time-based calculations in JavaScript
 
-🟥 Red → Occupied
+   - Data modeling using objects
 
-🟩 Green → Available
+   - Browser-based persistence
 
-Click on occupied slot to exit vehicle and generate bill
+   - Client-side file handling
 
-Smooth animations and hover effects
+   - Separation of logic and UI
+  
+---
 
-Responsive design for smaller screens
-
-🧠 Core Concepts Demonstrated
-
-First-Fit allocation algorithm
-
-Time-based calculations in JavaScript
-
-Data modeling using objects
-
-Browser-based persistence
-
-Client-side file handling
-
-Separation of logic and UI
-
-📂 Project Structure
+### 📂 Project Structure
+```bash
 /parking-system
 │── index.html      # Main UI structure
 │── style.css       # Styling & layout
@@ -133,76 +120,55 @@ Separation of logic and UI
 │── assets/
 │   ├── images/     # Placeholder images (optional)
 │   └── icons/      # Icons (optional)
-▶️ How to Run the Project
+```
+---
 
-Download or clone the project
+### ▶️ How to Run the Project
 
-Open index.html in any modern web browser
+- Download or clone the project
 
-Login using:
+- Open index.html in any modern web browser
+
+- Login using:
 
 Username: Admin
 Password: pass1
 
-Start parking vehicles 🚗🏍️
+- Start parking vehicles 🚗🏍️
 
-No server or installation required.
+- No server or installation required.
 
-🧪 How to Test
+---
 
-Park multiple vehicles
+### 🧪 How to Test
 
-Wait a few minutes
+- Park multiple vehicles
 
-Exit a vehicle by clicking an occupied slot
+- Wait a few minutes
 
-Verify:
+- Exit a vehicle by clicking an occupied slot
 
-Entry & exit time
+- Verify:
 
-Billing duration
+  - Entry & exit time
 
-Amount calculation
+   - Billing duration
 
-Export data → refresh page → import data
+   - Amount calculation
 
-🎓 Viva Explanation (Important)
-🔹 First-Fit Strategy
+   - Export data → refresh page → import data
+---
 
-The system assigns the first available empty slot, ensuring efficient space usage and fast allocation.
+### 👨‍💻 Technologies Used
 
-🔹 Billing Logic
+- HTML5
 
-Parking duration is calculated using entry and exit timestamps. Partial hours are rounded up, with a minimum charge of one hour.
+- CSS3
 
-🔹 File Handling in Web
+- JavaScript (Vanilla)
 
-Due to browser security restrictions, direct file I/O is not allowed. Therefore, file handling is implemented using text file export and import, which enables backup and restoration of parking data.
+- Browser APIs (localStorage, FileReader)
 
-🚀 Future Enhancements
-
-Toast notifications instead of alerts
-
-Printable bill modal
-
-Dark mode toggle
-
-Statistics dashboard cards
-
-Admin activity logs
-
-👨‍💻 Technologies Used
-
-HTML5
-
-CSS3
-
-JavaScript (Vanilla)
-
-Browser APIs (localStorage, FileReader)
-
-✅ Conclusion
-
-This project demonstrates a complete, realistic parking management workflow using only frontend technologies. It is designed to be simple, scalable, and academically strong, making it ideal for project submission and viva examinations.
+---
 
 ⭐ If you found this project useful, feel free to enhance and extend it further!
